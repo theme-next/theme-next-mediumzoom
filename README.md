@@ -8,7 +8,7 @@ Tag plugins for NexT.
 ## Install
 
 ```bash
-npm install --save theme-next/hexo-tag-plugin#last-release
+npm install theme-next/hexo-tag-plugin
 ```
 
 ## Configure
