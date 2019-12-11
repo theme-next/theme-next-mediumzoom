@@ -4,6 +4,7 @@
   grid-template-columns: 1fr 1fr;
   padding: 1.5rem;
   user-select: none;
+
   +mobile() {
     grid-template-columns: 1fr;
   }
@@ -20,30 +21,38 @@
       animation: shake 0.5s;
       background: rgba(230,244,250,.5);
     }
+
     &:active {
       box-shadow: 0.5rem 0.5rem 0.25rem gray;
       transform: translate(0.2rem, 0.2rem);
     }
+
     img {
+      border: 1px solid #ddd;
       border-radius: 50%;
+      box-sizing: border-box;
       height: 5rem;
       left: 0.5rem;
+      padding: 3px;
       position: absolute;
       top: 0.5rem;
       width: 5rem;
     }
+
     p {
       margin: 0 1rem 0 6rem;
 
       &:first-of-type {
         font-size: 1.2em;
       }
+
       &:last-of-type {
         font-size: 0.8em;
         line-height: 1.3rem;
         opacity: 0.7;
       }
     }
+
     a {
       border: none;
       height: 100%;
